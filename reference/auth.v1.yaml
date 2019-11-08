@@ -54,4 +54,4 @@ components:
       type: apiKey
       in: header
       description: ''
-      name: 'Bearer [token]'
+      name: 'Bearer '
