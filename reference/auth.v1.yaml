@@ -32,8 +32,6 @@ paths:
           name: Content-Type
           description: ''
           required: true
-      security:
-        - Token: []
       requestBody:
         content:
           application/json:
