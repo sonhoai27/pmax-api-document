@@ -27,10 +27,11 @@ paths:
       parameters:
         - schema:
             type: string
+            default: application/json
           in: header
           name: Content-Type
-          description: |
-            application/json
+          description: ''
+          required: true
       security:
         - Token: []
       requestBody:
