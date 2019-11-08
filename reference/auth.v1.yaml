@@ -5,7 +5,47 @@ info:
   description: ''
 servers:
   - url: 'http://localhost:3002/api/v1'
-paths: {}
+paths:
+  /login:
+    post:
+      summary: login
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  message:
+                    type: string
+                  token:
+                    type: string
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: Content-Type
+          description: |
+            application/json
+      security:
+        - Token: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+              required:
+                - email
+                - password
 components:
   schemas: {}
   securitySchemes:
