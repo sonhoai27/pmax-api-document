@@ -1,0 +1,16 @@
+openapi: 3.0.0
+info:
+  title: Auth
+  version: '1.0'
+  description: ''
+servers:
+  - url: 'http://localhost:3002/api/v1'
+paths: {}
+components:
+  schemas: {}
+  securitySchemes:
+    Token:
+      type: apiKey
+      in: header
+      description: ''
+      name: 'Bearer [token]'
